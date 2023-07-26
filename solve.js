@@ -7,6 +7,7 @@ const reverseString=(str)=>{
         arr.push(char)
     
     }
-    console.log(arr.join(''))
+    const result=arr.join('')
+    console.log(result)
 }
 reverseString("i am ajoy biswas now i want to be a developer")
