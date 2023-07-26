@@ -10,4 +10,24 @@ const reverseString=(str)=>{
     const result=arr.join('')
     console.log(result)
 }
-reverseString("i am ajoy biswas now i want to be a developer")
+reverseString("hello world")
+
+// Task 2 : Create a function that takes an array of numbers as input and returns the sum of all positive numbers in the array. 
+const sumOfPositiveNumber=(arr)=>{
+    if(arr.length>0){
+        let sum=0;
+        for(const i of arr){
+           if(i>0){
+             sum+=i
+           }
+           else{
+            console.log('number is negative')
+           }
+        }
+        console.log(sum)
+    }
+    else{
+        console.log('array is empty')
+    }
+}
+sumOfPositiveNumber([2,3,4,-5])
