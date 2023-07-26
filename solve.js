@@ -20,9 +20,7 @@ const sumOfPositiveNumber=(arr)=>{
            if(i>0){
              sum+=i
            }
-           else{
-            console.log('number is negative')
-           }
+           
         }
         console.log(sum)
     }
@@ -30,4 +28,4 @@ const sumOfPositiveNumber=(arr)=>{
         console.log('array is empty')
     }
 }
-sumOfPositiveNumber([2,3,4,-5])
+sumOfPositiveNumber([1,2,3,-5])
