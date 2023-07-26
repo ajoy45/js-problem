@@ -75,3 +75,25 @@ function mostFrequentElement(array) {
   }
   const result=twoNumbersWithSum([1, 3, 6, 8, 11, 15],9);
   console.log(result)
+  const simpleCalculator=(num1,num2,operator)=>{
+     if(operator==='+'){
+        return num1+num2;
+     }
+     else if(operator==="-"){
+        return num1-num2;
+     }
+     else if(operator==="*"){
+        return num1*num2
+     }
+     else if(operator==="/"){
+        if(num2!=0){
+            return num1/num2
+        }
+        else{
+            return 'can not divided by zero'
+        }
+        
+     }
+  }
+  const result2=simpleCalculator(2,0,"/");
+  console.log(result2)
