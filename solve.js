@@ -55,3 +55,23 @@ function mostFrequentElement(array) {
   }
   const array = [1, 2, 3, 3, 3,3, 4, 5, 5, 5];
   console.log(mostFrequentElement(array)); 
+
+  const twoNumbersWithSum=(arr,target)=>{
+    let firstElement=0;
+    let lastElement=arr.length-1;
+    while(firstElement<lastElement){
+        let sum=arr[firstElement]+arr[lastElement];
+        if(sum===target){
+            return[firstElement,lastElement]
+        }
+        else if(sum<target){
+           firstElement++
+        }
+        else{
+            lastElement--
+        }
+    }
+    return[]
+  }
+  const result=twoNumbersWithSum([1, 3, 6, 8, 11, 15],9);
+  console.log(result)
