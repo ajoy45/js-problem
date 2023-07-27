@@ -99,3 +99,19 @@ function mostFrequentElement(array) {
   }
   const result2=simpleCalculator(2,0,"/");
   console.log(result2)
+  // Task 6: Create a program that generates a random password of a specified length. The password should include a mix of uppercase letters, lowercase letters, numbers, and special characters.
+  // Generate a random password of 12 characters.
+  const generatePassword=(length)=>{
+    // Create a string 
+    const characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+{[]}\|;:'\",./<>?";
+  
+    // Generate a random password of  specified length.
+    let password='';
+    for(let i=0;i<=length;i++){
+      password+=characters[Math.floor(Math.random()*characters.length)]
+    }
+    return password;
+  }
+  const password=generatePassword(12)
+  console.log(password);
+  
