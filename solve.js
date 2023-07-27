@@ -115,7 +115,7 @@ function mostFrequentElement(array) {
   const password=generatePassword(12)
   console.log(password);
 // Task 7: Implement a function that converts a Roman numeral to an integer. The function should take a Roman numeral string (e.g., "IX" or "XXI") as input and return the corresponding integer value.
-  function romanToInteger(roman) {
+  const romanToInteger=(roman)=> {
     const romanNumerals = {
       'I': 1,
       'V': 5,
@@ -146,4 +146,16 @@ function mostFrequentElement(array) {
   
  
   console.log(romanToInteger("XX"));
-  
+  // Task 8: Implement a JavaScript function to find the second smallest element in an array of numbers. The function should return the second smallest number.
+  const secondSmallNumber=arr=>{
+    let first=arr[0];
+    for(let i=0;i<arr.length;i++){
+      const element=arr[i];
+      if(first>element){
+        first=element;
+      }
+      
+    }
+    return first;
+  }
+  console.log(secondSmallNumber([1,2,4,5,0]))
