@@ -333,5 +333,18 @@ const greatestCommonDivisor=(num1,num2)=>{
   }
   return gcd
 }
-const result10=greatestCommonDivisor(30,20);
+const result10=greatestCommonDivisor(24,15);
 console.log(result10)
+// task.20 JavaScript Program to Find LCM
+const findLcm=(num1,num2)=>{
+  let hig=(num1>num2)?num1:num2;
+  while(true){
+    if(hig%num1==0 && hig%num2==0){
+      console.log(`LCM of ${num1} and ${num2} is ${hig}`)
+      break;
+    }
+    hig++
+  }
+  // formula=(num1*num1)/gcd
+}
+findLcm(24,15)
