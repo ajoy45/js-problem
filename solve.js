@@ -348,3 +348,12 @@ const findLcm=(num1,num2)=>{
   // formula=(num1*num1)/gcd
 }
 findLcm(24,15)
+// task21.JavaScript Program to Find the Factors of a Number
+const findFactor=n=>{
+  for(let i=1;i<=n;i++){
+    if(n%i==0){
+      console.log(i)
+    }
+  }
+}
+findFactor(12)
