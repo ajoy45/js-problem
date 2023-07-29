@@ -323,3 +323,15 @@ const checkSameDigit=(num1,num2)=>{
 }
 const result9=checkSameDigit(33,23);
 console.log(result9)
+// task19.JavaScript Program to Find HCF or GCD
+const greatestCommonDivisor=(num1,num2)=>{
+  let gcd;
+  for(let i=1;i<=num1&&i<=num2;i++){
+    if(num1%i==0 && num2%i==0){
+             gcd=i
+    }
+  }
+  return gcd
+}
+const result10=greatestCommonDivisor(30,20);
+console.log(result10)
