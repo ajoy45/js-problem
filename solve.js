@@ -173,3 +173,14 @@ function mostFrequentElement(array) {
   }
    const result3=checkNumber(6);
    console.log(result3)
+  //  task10 Javascript Program to Check if a Number is Odd or Even
+  const checkOddAndEven=num=>{
+    if(num%2==0){
+      return 'this number is even'
+    }
+    else if(num%2!=0){
+      return'this number is odd'
+    }
+  }
+  const result4=checkOddAndEven(0);
+  console.log(result4)
