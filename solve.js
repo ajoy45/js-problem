@@ -259,3 +259,16 @@ function mostFrequentElement(array) {
 
   }
   multiplicationTable()
+  // task16.JavaScript Program to Print the Fibonacci Sequence
+ const fibonacci=n=>{
+  let n1=0,n2=1,next
+    for(let i=1;i<=n;i++){
+      console.log(n1)
+        next=n1+n2;
+        n1=n2;
+        n2=next
+    }
+    return next
+ }
+ const result7=fibonacci(4);
+ console.log(result7)
