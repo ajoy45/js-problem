@@ -159,3 +159,17 @@ function mostFrequentElement(array) {
     return first;
   }
   console.log(secondSmallNumber([1,2,4,5,0]))
+  //Task9. Javascript Program to Check if a number is Positive, Negative, or Zero`
+  const checkNumber=num=>{
+    if(num>0){
+      return 'this is positive'
+    }
+    else if(num==0){
+      return'this is zero'
+    }
+    else if(num<0){
+      return 'this is negative'
+    }
+  }
+   const result3=checkNumber(6);
+   console.log(result3)
