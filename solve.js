@@ -249,3 +249,13 @@ function mostFrequentElement(array) {
   }
   const result6=findFactorial(6);
   console.log(result6)
+  // task15.JavaScript Program to Display the Multiplication Table
+  const multiplicationTable=()=>{
+    
+    for(let i=1;i<=10;i++){
+      const output=3*i;
+      console.log(`3*${i}=${output}`)
+    }
+
+  }
+  multiplicationTable()
