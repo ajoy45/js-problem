@@ -357,3 +357,14 @@ const findFactor=n=>{
   }
 }
 findFactor(12)
+// task22.JavaScript Program to Find Sum of Natural Numbers Using Recursion
+const sumUsingRecursion=n=>{
+ if(n>0){
+  return n+sumUsingRecursion(n-1)
+ }
+ else{
+  return n
+ }
+}
+const result11=sumUsingRecursion(5);
+console.log(result11)
