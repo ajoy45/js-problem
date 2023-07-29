@@ -198,3 +198,21 @@ function mostFrequentElement(array) {
   }
   const result5=largestNumber(5,3,4);
   console.log(result5)
+  // task12.JavaScript Program to Check Prime Number
+  const checkPrimeNumber=n=>{
+    let isPrimeNumber=true;
+    for(let i=2;i<=n;i++){
+      for(let j=2;j<i-1;j++){
+        if(i%j==0){
+          isPrimeNumber=false;
+          break;
+        }
+      }
+      if(isPrimeNumber){
+        console.log(i)
+      }
+      isPrimeNumber=true;
+    }
+   
+  }
+  checkPrimeNumber(100)
