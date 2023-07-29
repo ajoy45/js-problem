@@ -300,3 +300,26 @@ const sumOfNaturalNumber=n=>{
 }
 const result8=sumOfNaturalNumber(10);
 console.log(result8)
+// task18.JavaScript Program to Check if the Numbers Have Same Last Digit
+const checkSameDigit=(num1,num2)=>{
+  let x=0;
+  const toText1=num1.toString();
+  const lastChar1=toText1.slice(-1);
+  const lastDigit1=+(lastChar1);
+  const firstNumber=x+lastDigit1;
+  const toText2=num2.toString();
+  const lastChar2=toText2.slice(-1);
+  const lastDigit2=+(lastChar2);
+  const secondNumber=x+lastDigit2;
+  if(firstNumber==secondNumber){
+    return `number ${num1} and ${num2} last digit is same`
+  }
+  else{
+    return `number ${num1} and ${num2} last digit is not same`
+  }
+
+ 
+  
+}
+const result9=checkSameDigit(33,23);
+console.log(result9)
