@@ -216,3 +216,20 @@ function mostFrequentElement(array) {
    
   }
   checkPrimeNumber(100)
+  // task13.JavaScript Program to Print All Prime Numbers in an Interval
+  const primeNumberInterval=(num1,num2)=>{
+    let isPrimeNumber=true;
+    for(let i=num1;i<=num2;i++){
+      for(let j=2;j<i-1;j++){
+        if(i%j==0){
+          isPrimeNumber=false;
+          break;
+        }
+      }
+      if(isPrimeNumber){
+        console.log(i)
+      }
+      isPrimeNumber=true;
+    }
+  }
+  primeNumberInterval(1,10)
