@@ -233,3 +233,19 @@ function mostFrequentElement(array) {
     }
   }
   primeNumberInterval(1,10)
+  // task14.JavaScript Program to Find the Factorial of a Number
+  const findFactorial=n=>{
+    let factorial=1;
+    if(n<0){
+      return 'factorial negative number is not allow'
+    }
+    else if(n==0){
+      return 1
+    }
+    for(let i=n;i>=1;i--){
+       factorial*=i
+    }
+    return factorial;
+  }
+  const result6=findFactorial(6);
+  console.log(result6)
