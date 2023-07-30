@@ -368,3 +368,16 @@ const sumUsingRecursion=n=>{
 }
 const result11=sumUsingRecursion(5);
 console.log(result11)
+// task23.JavaScript Program to Guess a Random Number
+const guessRandomNumber=(number)=>{
+  const randomNumber=Math.floor(Math.random()*10);
+  if(number===randomNumber){
+     return 'guess number is same'
+  }
+  else{
+    return'guess number is not same'
+  }
+  
+}
+const result12=guessRandomNumber(8);
+console.log(result12)
